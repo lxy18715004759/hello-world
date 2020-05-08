@@ -1,15 +1,22 @@
 <template>
   <div class="page">
-    <HelloWorld msg="Hello World!" />
+    <WorldMap></WorldMap>
   </div>
 </template>
-
 <script>
-import HelloWorld from "@/components/HelloWorld";
-
+import WorldMap from "@/components/WorldMap";
 export default {
-  components: {
-    HelloWorld
+  name: "Home",
+  components: { WorldMap },
+  data() {
+    return {};
+  },
+  mounted() {
+    let { init } = this;
+    init();
+  },
+  methods: {
+    init() {}
   }
 };
 </script>

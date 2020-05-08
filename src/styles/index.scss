@@ -1,0 +1,20 @@
+body,html{
+  height: 100%;
+  width:100%;
+}
+#app{
+  height: 100%;
+  width:100%;
+}
+
+// 过渡动画 横向渐变 begin
+.fade-transverse-leave-active,
+.fade-transverse-enter-active {
+  transition: all 0.2s;
+}
+.fade-transverse-enter,
+.fade-transverse-leave-to {
+  opacity: 0;
+  transform: translateX(10px);
+}
+// 过渡动画 横向渐变  end

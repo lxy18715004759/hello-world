@@ -31,6 +31,7 @@ module.exports = {
     }
   },
   configureWebpack: config => {
+    config.name="世界地图"
     config.devtool = 'source-map'
     if (isProduction) {
       // 生产环境
@@ -45,6 +46,7 @@ module.exports = {
   },
 
   chainWebpack: (config) => {
+    config.resolve.alias.set('@', resolve('src'))
     config.resolve.alias.set('@assets', resolve('src/assets'))
     config.output.filename('[name].[hash].js').end()
 
