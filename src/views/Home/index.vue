@@ -1,16 +1,18 @@
 <template>
     <div class="page">
         <!--    <WorldMap></WorldMap>-->
-        <BaiDuMap></BaiDuMap>
+<!--        <BaiDuMap></BaiDuMap>-->
+        <Chat></Chat>
     </div>
 </template>
 <script>
     import WorldMap from "@/components/WorldMap";
     import BaiDuMap from "@/components/BaiDuMap"
+    import Chat from "@/components/Chat"
 
     export default {
         name: "Home",
-        components: {WorldMap, BaiDuMap},
+        components: {WorldMap, BaiDuMap,Chat},
         data() {
             return {};
         },
