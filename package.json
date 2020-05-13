@@ -13,6 +13,7 @@
     "axios": "^0.19.2",
     "core-js": "^3.3.2",
     "element-ui": "^2.13.1",
+    "screenfull": "^5.0.2",
     "three": "^0.115.0",
     "three-orbit-controls": "^82.1.0",
     "vue": "^2.6.10",

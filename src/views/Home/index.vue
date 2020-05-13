@@ -1,28 +1,36 @@
 <template>
-  <div class="page">
-    <WorldMap></WorldMap>
-  </div>
+    <div class="page">
+        <!--    <WorldMap></WorldMap>-->
+        <BaiDuMap></BaiDuMap>
+    </div>
 </template>
 <script>
-import WorldMap from "@/components/WorldMap";
-export default {
-  name: "Home",
-  components: { WorldMap },
-  data() {
-    return {};
-  },
-  mounted() {
-    let { init } = this;
-    init();
-  },
-  methods: {
-    init() {}
-  }
-};
+    import WorldMap from "@/components/WorldMap";
+    import BaiDuMap from "@/components/BaiDuMap"
+
+    export default {
+        name: "Home",
+        components: {WorldMap, BaiDuMap},
+        data() {
+            return {};
+        },
+        mounted() {
+            let {init} = this;
+            init();
+        },
+        methods: {
+            init() {
+            }
+        }
+    };
 </script>
 
 <style lang="scss" scoped>
-.home {
-  font-size: 10px;
-}
+    .home {
+        font-size: 10px;
+    }
+
+    .page {
+        height: 100%;
+    }
 </style>

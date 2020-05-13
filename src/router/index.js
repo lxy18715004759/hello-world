@@ -8,6 +8,11 @@ Vue.use(VueRouter);
 const routes = [
     {
         path: "/",
+        name: "Home",
+        component: Home,
+    },
+    {
+        path: "/layout",
         name: "Layout",
         redirect: "/scenes",
         component: Layout,
