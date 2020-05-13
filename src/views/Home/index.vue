@@ -25,4 +25,8 @@ export default {
 .home {
   font-size: 10px;
 }
+.page{
+  width:100%;
+  height: 100%;
+}
 </style>
