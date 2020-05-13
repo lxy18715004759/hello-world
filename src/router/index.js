@@ -11,12 +11,6 @@ const routes = [
         name: "Home",
         component: Home,
     },
-    {
-        path: "/layout",
-        name: "Layout",
-        redirect: "/scenes",
-        component: Layout,
-    },
     ...scenes,
   {
     path: "/cameras",
